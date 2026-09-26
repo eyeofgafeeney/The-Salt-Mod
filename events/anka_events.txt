@@ -1,0 +1,224 @@
+add_namespace = mollissea_sec_1
+add_namespace = mollissea_torch
+add_namespace = mollissea_misc
+add_namespace = mollissea_squidd
+add_namespace = mollissea_desmon
+add_namespace = fists_of_fur
+news_event = {
+	id = mollissea_sec_1.1
+	title = mollissea_sec_1.1.t
+	desc = mollissea_sec_1.1.d
+	picture = GFX_news_event_038
+	is_triggered_only = yes
+	option = {
+		name = mollissea_sec_1.1.a
+	}
+}
+country_event = {
+	id = mollissea_torch.1
+	title = mollissea_torch.1.t
+	desc = mollissea_torch.1.d
+	picture = GFX_report_event_election_vote
+	is_triggered_only = yes
+	option = {
+		name = mollissea_torch.1.a
+		country_event = {
+			id = mollissea_squidd.1
+		}
+	}
+	option = {
+		name = mollissea_torch.1.b
+	}
+	option = {
+		name = mollissea_torch.1.c
+		add_political_power = -100
+		country_event = {
+			id = mollissea_torch.2
+		}
+	}
+}
+country_event = {
+	id = mollissea_misc.1
+	title = mollissea_misc.1.t
+	desc = mollissea_misc.1.d
+	picture = GFX_report_event_generic_sign_treaty
+	is_triggered_only = yes
+	option = {
+		name = mollissea_misc.1.a
+		complete_national_focus = MOS_cou_1
+	}
+	option = {
+		name = mollissea_misc.1.b
+		complete_national_focus = MOS_sec_1
+	}
+	option = {
+		name = mollissea_misc.1.c
+		complete_national_focus = mos_tor_1
+	}
+}
+country_event = {
+	id = mollissea_torch.2
+	title = mollissea_torch.2.t
+	desc = mollissea_torch.2.d
+	picture = GFX_report_event_FIN_paasikivi_president
+	is_triggered_only = yes
+	option = {
+		name = mollissea_torch.2.a
+		add_political_power = -50
+		country_event = {
+			id = mollissea_torch.3
+		}
+	}
+	option = {
+		name = mollissea_torch.2.b
+		country_event = {
+			id = mollissea_torch.1
+		}
+	}
+}
+country_event = {
+	id = mollissea_torch.3
+	title = mollissea_torch.3.t
+	desc = mollissea_torch.3.d
+	picture = GFX_report_event_generic_parliament
+	is_triggered_only = yes
+	option = {
+		name = mollissea_torch.3.a
+		load_focus_tree = mollissea_torch
+	}
+}
+country_event = {
+	id = mollissea_squidd.1
+	title = mollissea_squidd.1.t
+	desc = mollissea_squidd.1.d
+	picture = GFX_report_event_generic_sign_treaty
+	is_triggered_only = yes
+	option = {
+		name = mollissea_squidd.1.a
+		create_faction = "The Mollissea Pact"
+		add_to_faction = FUR
+		load_focus_tree = mollissea_squidd
+		add_opinion_modifier = {
+			target = FUR
+			modifier = alliance
+		}
+		add_opinion_modifier = {
+			target = FUR
+			modifier = alliance
+		}
+		country_event = {
+			id = mollissea_squidd.2
+		}
+	}
+}
+country_event = {
+	id = mollissea_desmon.1
+	title = mollissea_desmon.1.t
+	desc = mollissea_desmon.1.d
+	picture = GFX_report_event_generic_sign_treaty
+	is_triggered_only = yes
+	option = {
+		name = mollissea_desmon.1.a
+	}
+}
+country_event = {
+	id = mollissea_squidd.2
+	title = mollissea_squidd.2.t
+	desc = mollissea_squidd.2.d
+	picture = GFX_report_event_generic_sign_treaty
+	is_triggered_only = yes
+	option = {
+		name = mollissea_squidd.2.a
+		puppet = FUR
+		country_event = {
+			id = mollissea_squidd.3
+		}
+	}
+	option = {
+		name = mollissea_squidd.2.b
+		annex_country = {
+			target = FUR
+			transfer_troops = yes
+		}
+	}
+}
+country_event = {
+	id = mollissea_squidd.3
+	title = mollissea_squidd.3.t
+	desc = mollissea_squidd.3.d
+	picture = GFX_report_event_generic_sign_treaty
+	is_triggered_only = yes
+	option = {
+		name = mollissea_squidd.3.a
+		set_autonomy = {
+			target = FUR
+			autonomy_state = autonomy_personal_union
+			freedom_level = 0
+		}
+	}
+}
+country_event = {
+	id = mollissea_desmon.2
+	title = mollissea_desmon.2.t
+	desc = mollissea_desmon.2.d
+	picture = GFX_report_event_generic_sign_treaty
+	is_triggered_only = yes
+	option = {
+		name = mollissea_desmon.2.a
+	}
+}
+news_event = {
+	id = mollissea_torch.4
+	title = mollissea_torch.4.t
+	desc = mollissea_torch.4.d
+	picture = GFX_news_event_generic_handshake
+	is_triggered_only = yes
+	option = {
+		name = mollissea_torch.4.a
+	}
+}
+country_event = {
+	id = mollissea_misc.2
+	title = mollissea_misc.2.t
+	desc = mollissea_misc.2.d
+	picture = GFX_report_event_generic_sign_treaty
+	is_triggered_only = yes
+	option = {
+		name = mollissea_misc.2.a
+	}
+}
+country_event = {
+	id = mollissea_misc.3
+	title = mollissea_misc.3.t
+	desc = mollissea_misc.3.d
+	picture = GFX_report_event_generic_sign_treaty
+	is_triggered_only = yes
+	option = {
+		name = mollissea_misc.3.a
+		country_event = {
+			id = mollissea_misc.4
+		}
+		trigger = {
+			date = 1936.2.1
+		}
+	}
+	option = {
+		name = mollissea_misc.3.b
+	}
+	trigger = {
+		date = 1936.2.1
+	}
+}
+country_event = {
+	id = mollissea_misc.4
+	title = mollissea_misc.4.t
+	desc = mollissea_misc.4.d
+	picture = GFX_report_event_generic_sign_treaty
+	is_triggered_only = yes
+	option = {
+		name = mollissea_misc.4.a
+		immediate = {
+			play_song = "familar_tune"
+		}
+	}
+}

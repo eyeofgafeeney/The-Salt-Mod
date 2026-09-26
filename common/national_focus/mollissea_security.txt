@@ -1,0 +1,8 @@
+focus_tree = {
+	id = mollissea_security
+	country = {
+		factor = 0
+	}
+	default = no
+	reset_on_civilwar = no
+}

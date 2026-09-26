@@ -1,0 +1,5 @@
+MOS = "countries/Mollissea.txt"
+ALK = "countries/Alaska.txt"
+FUR = "countries/Fists of Fur.txt"
+MCR = "countries/Mountain Centeral Republic.txt"
+ZEA = "countries/The Zealandian State.txt"

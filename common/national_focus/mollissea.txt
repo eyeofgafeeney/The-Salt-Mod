@@ -1,0 +1,440 @@
+focus_tree = {
+	id = mollissea
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = MOS
+		}
+	}
+	default = no
+	reset_on_civilwar = no
+	focus = {
+		id = MOS_start
+		icon = GFX_focus_generic_expropriate_industrialist
+		x = 12
+		y = 0
+		cost = 0
+		completion_reward = {
+			add_political_power = -200
+			add_ideas = { mos_economy mos_military }
+			recruit_character = mos_pineapple
+			country_event = {
+				id = mollissea_misc.2
+			}
+		}
+	}
+	focus = {
+		id = MOS_political_1
+		icon = GFX_focus_generic_army_attack
+		x = 15
+		y = 2
+		cost = 1
+		completion_reward = {
+			add_stability = 0.015
+			add_war_support = 0.05
+			set_politics = {
+				ruling_party = democratic
+				elections_allowed = no
+			}
+		}
+		mutually_exclusive = {
+			focus = mos_pres_1
+		}
+		prerequisite = {
+			focus = MOS_start
+		}
+	}
+	focus = {
+		id = MOS_political_2
+		icon = GFX_focus_generic_industrialists
+		x = 15
+		y = 4
+		cost = 5
+		completion_reward = {
+			country_event = {
+				id = mollissea_misc.1
+			}
+		}
+		prerequisite = {
+			focus = MOS_political_1
+		}
+	}
+	focus = {
+		id = MOS_sec_1
+		icon = GFX_focus_generic_advisors
+		x = 13
+		y = 5
+		cost = 4
+		completion_reward = {}
+		mutually_exclusive = {
+			focus = MOS_cou_1
+		}
+		prerequisite = {
+			focus = MOS_political_2
+		}
+	}
+	focus = {
+		id = MOS_cou_1
+		icon = GFX_focus_generic_improve_the_administration
+		x = 17
+		y = 5
+		cost = 4
+		completion_reward = {}
+		mutually_exclusive = {
+			focus = MOS_sec_1
+			focus = mos_tor_1
+		}
+		prerequisite = {
+			focus = MOS_political_2
+		}
+	}
+	focus = {
+		id = MOS_sec_2
+		icon = GFX_goal_generic_propaganda
+		x = 14
+		y = 7
+		cost = 1
+		completion_reward = {
+			add_popularity = {
+				ideology = security_state
+				popularity = 0.10
+			}
+		}
+		prerequisite = {
+			focus = MOS_sec_1
+		}
+	}
+	focus = {
+		id = MOS_sec_3
+		icon = GFX_focus_generic_court
+		x = 12
+		y = 7
+		cost = 1
+		completion_reward = {
+			add_manpower = -16
+			add_stability = 0.05
+		}
+		prerequisite = {
+			focus = MOS_sec_1
+		}
+	}
+	focus = {
+		id = MOS_sec_4
+		icon = GFX_focus_generic_conspiracy
+		x = 12
+		y = 8
+		cost = 1
+		completion_reward = {
+			add_manpower = 100
+			add_political_power = 10
+		}
+		prerequisite = {
+			focus = MOS_sec_3
+		}
+	}
+	focus = {
+		id = MOS_sec_5
+		icon = GFX_focus_ARG_anti_american_propaganda
+		x = 14
+		y = 8
+		cost = 1
+		completion_reward = {
+			add_popularity = {
+				ideology = neutrality
+				popularity = 0.10
+			}
+			add_popularity = {
+				ideology = security_state
+				popularity = 0.25
+			}
+		}
+		prerequisite = {
+			focus = MOS_sec_2
+		}
+	}
+	focus = {
+		id = MOS_sec_6
+		icon = GFX_focus_generic_phone
+		x = 13
+		y = 10
+		cost = 2
+		completion_reward = {
+			set_politics = {
+				ruling_party = security_state
+				elections_allowed = no
+			}
+			load_focus_tree = mollissea_security
+			news_event = {
+				id = mollissea_sec_1.1
+			}
+		}
+		prerequisite = {
+			focus = MOS_sec_4
+		}
+		prerequisite = {
+			focus = MOS_sec_5
+		}
+	}
+	focus = {
+		id = MOS_cou_2
+		icon = GFX_focus_generic_court
+		x = 16
+		y = 7
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = MOS_cou_1
+		}
+	}
+	focus = {
+		id = MOS_cou_3
+		icon = GFX_focus_generic_flight_instructors
+		x = 18
+		y = 7
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = MOS_cou_1
+		}
+	}
+	focus = {
+		id = MOS_cou_4
+		icon = GFX_focus_generic_commission
+		x = 16
+		y = 8
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = MOS_cou_2
+		}
+	}
+	focus = {
+		id = MOS_cou_5
+		icon = GFX_goal_support_democracy
+		x = 18
+		y = 8
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = MOS_cou_3
+		}
+	}
+	focus = {
+		id = MOS_cou_6
+		icon = GFX_focus_generic_advanced_military_studies
+		x = 17
+		y = 10
+		cost = 2
+		completion_reward = {}
+		prerequisite = {
+			focus = MOS_cou_4
+		}
+		prerequisite = {
+			focus = MOS_cou_5
+		}
+	}
+	focus = {
+		id = mos_tor_1
+		icon = GFX_focus_spr_torchbearers_of_tomorrow
+		x = 21
+		y = 5
+		cost = 4
+		completion_reward = {
+			set_politics = {
+				ruling_party = democratic
+				elections_allowed = no
+			}
+		}
+		mutually_exclusive = {
+			focus = MOS_cou_1
+		}
+		prerequisite = {
+			focus = MOS_political_2
+		}
+	}
+	focus = {
+		id = mos_pres_1
+		icon = GFX_focus_generic_improve_the_administration_2
+		x = 9
+		y = 2
+		cost = 1
+		completion_reward = {}
+		prerequisite = {
+			focus = MOS_start
+		}
+		mutually_exclusive = {
+			focus = MOS_political_1
+		}
+	}
+	focus = {
+		id = MOS_pres_2
+		icon = GFX_goal_unknown
+		x = 9
+		y = 5
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = mos_pres_1
+		}
+	}
+	focus = {
+		id = MOS_pres_3
+		icon = GFX_goal_unknown
+		x = 10
+		y = 7
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = MOS_pres_2
+		}
+	}
+	focus = {
+		id = MOS_pres_4
+		icon = GFX_goal_unknown
+		x = 8
+		y = 7
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = MOS_pres_2
+		}
+	}
+	focus = {
+		id = MOS_pres_5
+		icon = GFX_goal_unknown
+		x = 10
+		y = 8
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = MOS_pres_3
+		}
+	}
+	focus = {
+		id = MOS_pres_6
+		icon = GFX_goal_unknown
+		x = 8
+		y = 8
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = MOS_pres_4
+		}
+	}
+	focus = {
+		id = MOS_pres_7
+		icon = GFX_goal_unknown
+		x = 9
+		y = 10
+		cost = 2
+		completion_reward = {}
+		prerequisite = {
+			focus = MOS_pres_5
+		}
+		prerequisite = {
+			focus = MOS_pres_6
+		}
+	}
+	focus = {
+		id = MOS_tor_2
+		icon = GFX_focus_generic_treaty
+		x = 20
+		y = 8
+		cost = 1
+		completion_reward = {
+			add_ideas = { mos_reform_1 }
+		}
+		prerequisite = {
+			focus = mos_tor_1
+		}
+		prerequisite = {
+			focus = MOS_tor_3
+		}
+	}
+	focus = {
+		id = MOS_tor_3
+		icon = GFX_focus_generic_blue_flags
+		x = 21
+		y = 7
+		cost = 2
+		completion_reward = {
+			add_stability = 0.05
+		}
+		prerequisite = {
+			focus = mos_tor_1
+		}
+	}
+	focus = {
+		id = MOS_tor_4
+		icon = GFX_focus_generic_democratic_europe
+		x = 22
+		y = 8
+		cost = 1
+		completion_reward = {
+			activate_decision = ban_communist_party
+			activate_decision = ban_fascist_party
+		}
+		prerequisite = {
+			focus = mos_tor_1
+		}
+		prerequisite = {
+			focus = MOS_tor_3
+		}
+	}
+	focus = {
+		id = MOS_tor_5
+		icon = GFX_focus_ETH_boots_on_the_shore
+		x = 22
+		y = 9
+		cost = 1
+		completion_reward = {
+			add_popularity = {
+				ideology = neutrality
+				popularity = 0.25
+			}
+			add_popularity = {
+				ideology = security_state
+				popularity = -0.15
+			}
+		}
+		prerequisite = {
+			focus = MOS_tor_4
+		}
+	}
+	focus = {
+		id = MOS_tor_6
+		icon = GFX_goal_support_democracy
+		x = 20
+		y = 9
+		cost = 1
+		completion_reward = {
+			remove_ideas = { mos_reform_1 }
+			add_ideas = { mos_reform_2 }
+		}
+		prerequisite = {
+			focus = MOS_tor_2
+		}
+	}
+	focus = {
+		id = MOS_tor7
+		icon = GFX_focus_generic_vote
+		x = 21
+		y = 10
+		cost = 2
+		completion_reward = {
+			country_event = {
+				id = mollissea_torch.1
+			}
+		}
+		prerequisite = {
+			focus = MOS_tor_3
+		}
+		prerequisite = {
+			focus = MOS_tor_5
+		}
+		prerequisite = {
+			focus = MOS_tor_6
+		}
+	}
+}

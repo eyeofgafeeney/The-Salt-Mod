@@ -1,0 +1,5 @@
+technology_folders = {
+	experemental_weapons = {
+		ledger = army
+	}
+}

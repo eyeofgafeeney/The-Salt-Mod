@@ -1,0 +1,87 @@
+characters = {
+	mos_council = {
+		name = mos_council
+		portraits = {
+			civilian = {
+				large = GFX_portrait_mos_council
+				small = GFX_portrait_mos_council_small
+			}
+			army = {
+				large = GFX_portrait_mos_council_army
+				small = GFX_portrait_mos_council_army_small
+			}
+			navy = {
+				large = GFX_portrait_mos_council_navy
+			}
+		}
+		country_leader = {
+			ideology = populism
+			expire = "1965.1.1.1"
+			traits = { ARG_harsh_democrat }
+			id = -1
+		}
+	}
+	mos_pineapple = {
+		name = mos_pineapple
+		advisor = {
+			slot = political_advisor
+			idea_token = mos_pineapple
+			cost = 50
+			traits = { artificial_assistance }
+		}
+		portraits = {
+			civilian = {
+				small = GFX_portrait_mos_pineapple_small
+			}
+		}
+	}
+	mos_torch = {
+		name = mos_torch
+		portraits = {
+			civilian = {
+				large = GFX_portrait_mos_torch
+				small = GFX_portrait_mos_torch_small
+			}
+		}
+		country_leader = {
+			ideology = socialism
+			expire = "1965.1.1.1"
+			traits = { medicated_adhd microcelebrity_of_the_people keeper_of_peace }
+			id = -1
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = mos_torchiceo
+			cost = 150
+			traits = { focused_economist }
+		}
+	}
+	mos_noava = {
+		name = mos_noava
+		portraits = {
+			civilian = {
+				large = GFX_portrait_mos_noava
+			}
+		}
+		country_leader = {
+			ideology = fascism_ideology
+			expire = "1965.1.1.1"
+			traits = { AFG_authoritarian_modifier }
+			id = -1
+		}
+	}
+	mos_squidd = {
+		name = mos_squidd
+		country_leader = {
+			ideology = moderatism
+			expire = "1965.1.1.1"
+			traits = { silent_workhorse }
+			id = -1
+		}
+		portraits = {
+			civilian = {
+				large = GFX_portrait_mos_squidd
+			}
+		}
+	}
+}

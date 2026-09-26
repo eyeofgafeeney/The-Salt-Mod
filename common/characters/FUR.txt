@@ -1,0 +1,16 @@
+characters = {
+	fur_squidd = {
+		name = fur_squidd
+		portraits = {
+			civilian = {
+				large = GFX_portrait_fur_squidd
+			}
+		}
+		country_leader = {
+			ideology = moderatism
+			expire = "1965.1.1.1"
+			traits = { silent_workhorse }
+			id = -1
+		}
+	}
+}

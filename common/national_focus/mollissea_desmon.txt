@@ -1,0 +1,291 @@
+focus_tree = {
+	id = mollissea_desmon
+	country = {
+		factor = 0
+	}
+	default = no
+	reset_on_civilwar = no
+	focus = {
+		id = mollissea_desmon_1
+		icon = GFX_goal_unknown
+		x = -1
+		y = -1
+		cost = 10
+		completion_reward = {}
+	}
+	focus = {
+		id = mollissea_p_2
+		icon = GFX_goal_unknown
+		x = -1
+		y = 1
+		cost = 5
+		completion_reward = {
+			country_event = {
+				id = mollissea_desmon.2
+			}
+		}
+		prerequisite = {
+			focus = mollissea_desmon_1
+		}
+	}
+	focus = {
+		id = mollissea_e_1
+		icon = GFX_goal_unknown
+		x = -7
+		y = 1
+		cost = 5
+		completion_reward = {}
+		prerequisite = {
+			focus = mollissea_desmon_1
+		}
+	}
+	focus = {
+		id = mollissea_w_1
+		icon = GFX_goal_unknown
+		x = 4
+		y = 1
+		cost = 5
+		completion_reward = {}
+		prerequisite = {
+			focus = mollissea_desmon_1
+		}
+	}
+	focus = {
+		id = mollissea_e_2
+		icon = GFX_focus_usa_reestablish_the_gold_standard
+		x = -6
+		y = 2
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = mollissea_e_1
+		}
+	}
+	focus = {
+		id = mollissea_e_3
+		icon = GFX_goal_unknown
+		x = -8
+		y = 2
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = mollissea_e_1
+		}
+	}
+	focus = {
+		id = mollissea_e_4
+		icon = GFX_goal_unknown
+		x = -6
+		y = 4
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = mollissea_e_2
+		}
+	}
+	focus = {
+		id = mollissea_e_5
+		icon = GFX_goal_unknown
+		x = -5
+		y = 4
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = mollissea_e_2
+		}
+	}
+	focus = {
+		id = mollissea_e_6
+		icon = GFX_goal_unknown
+		x = -4
+		y = 4
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = mollissea_e_2
+		}
+	}
+	focus = {
+		id = mollissea_e_7
+		icon = GFX_goal_unknown
+		x = -6
+		y = 8
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = mollissea_e_11
+		}
+	}
+	focus = {
+		id = mollissea_e_8
+		icon = GFX_goal_unknown
+		x = -5
+		y = 8
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = mollissea_e_11
+		}
+	}
+	focus = {
+		id = mollissea_e_9
+		icon = GFX_goal_unknown
+		x = -4
+		y = 8
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = mollissea_e_11
+		}
+	}
+	focus = {
+		id = mollissea_e_10
+		icon = GFX_goal_unknown
+		x = -3
+		y = 8
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = mollissea_e_11
+		}
+	}
+	focus = {
+		id = mollissea_e_11
+		icon = GFX_goal_unknown
+		x = -7
+		y = 6
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = mollissea_e_4
+		}
+		prerequisite = {
+			focus = mollissea_e_5
+		}
+		prerequisite = {
+			focus = mollissea_e_6
+		}
+		prerequisite = {
+			focus = mollissea_e_15
+		}
+		prerequisite = {
+			focus = mollissea_e_14
+		}
+		prerequisite = {
+			focus = mollissea_e_13
+		}
+	}
+	focus = {
+		id = mollissea_e_12
+		icon = GFX_goal_unknown
+		x = -7
+		y = 10
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = mollissea_e_7
+		}
+		prerequisite = {
+			focus = mollissea_e_8
+		}
+		prerequisite = {
+			focus = mollissea_e_9
+		}
+		prerequisite = {
+			focus = mollissea_e_10
+		}
+		prerequisite = {
+			focus = mollissea_e_19
+		}
+		prerequisite = {
+			focus = mollissea_e_18
+		}
+		prerequisite = {
+			focus = mollissea_e_17
+		}
+		prerequisite = {
+			focus = mollissea_e_16
+		}
+	}
+	focus = {
+		id = mollissea_e_13
+		icon = GFX_goal_unknown
+		x = -8
+		y = 4
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = mollissea_e_3
+		}
+	}
+	focus = {
+		id = mollissea_e_14
+		icon = GFX_goal_unknown
+		x = -9
+		y = 4
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = mollissea_e_3
+		}
+	}
+	focus = {
+		id = mollissea_e_15
+		icon = GFX_goal_unknown
+		x = -10
+		y = 4
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = mollissea_e_3
+		}
+	}
+	focus = {
+		id = mollissea_e_16
+		icon = GFX_goal_unknown
+		x = -8
+		y = 8
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = mollissea_e_11
+		}
+	}
+	focus = {
+		id = mollissea_e_17
+		icon = GFX_goal_unknown
+		x = -9
+		y = 8
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = mollissea_e_11
+		}
+	}
+	focus = {
+		id = mollissea_e_18
+		icon = GFX_goal_unknown
+		x = -10
+		y = 8
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = mollissea_e_11
+		}
+	}
+	focus = {
+		id = mollissea_e_19
+		icon = GFX_goal_unknown
+		x = -11
+		y = 8
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = mollissea_e_11
+		}
+	}
+	continuous_focus_position = {
+		x = 1000
+		y = 1000
+	}
+}

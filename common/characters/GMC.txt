@@ -1,0 +1,16 @@
+characters = {
+	gmc_earthchan = {
+		name = gmc_earthchan
+		portraits = {
+			civilian = {
+				large = GFX_portrait_gmc_earthchan
+			}
+		}
+		country_leader = {
+			ideology = liberalism
+			expire = "1965.1.1.1"
+			traits = {}
+			id = -1
+		}
+	}
+}

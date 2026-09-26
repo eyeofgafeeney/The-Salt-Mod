@@ -1,0 +1,21 @@
+ideologies = {
+	security_state = {
+		color = { 0 0 64 }
+		rules = {
+			can_force_government = yes
+			can_send_volunteers = yes
+			can_puppet = yes
+			can_declare_war_on_same_ideology = yes
+			can_create_collaboration_government = yes
+			can_lower_tension = yes
+			can_only_justify_war_on_threat_country = no
+			can_guarantee_other_ideologies = yes
+		}
+		war_impact_on_world_tension = 0.5
+		faction_impact_on_world_tension = 0.5
+		ai_neutral = yes
+		can_be_boosted = yes
+		can_collaborate = yes
+		can_host_government_in_exile = yes
+	}
+}

@@ -1,0 +1,22 @@
+equipments = {
+	kcr_arch = {
+		year = 1936
+		is_archetype = yes
+		is_buildable = no
+		type = infantry
+		group_by = archetype
+		interface_category = interface_category_land
+		one_use_only = yes
+		resources = {
+			steel = 0
+			chromium = 0
+			tungsten = 0
+			oil = 0
+		}
+		breakthrough = 100
+		manpower = 1
+		build_cost_ic = 150
+		hard_attack = 250
+		soft_attack = 250
+	}
+}

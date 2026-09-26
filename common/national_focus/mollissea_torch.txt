@@ -1,0 +1,116 @@
+focus_tree = {
+	id = mollissea_torch
+	country = {
+		factor = 0
+	}
+	default = no
+	reset_on_civilwar = no
+	focus = {
+		id = mollissea_torch_1
+		icon = GFX_focus_spr_torchbearers_of_tomorrow
+		x = -1
+		y = -2
+		cost = 10
+		completion_reward = {
+			news_event = {
+				id = mollissea_torch.4
+			}
+		}
+	}
+	focus = {
+		id = mollissea_torch_p_2_1
+		icon = GFX_focus_generic_diplomatic_treaty
+		x = -1
+		y = 0
+		cost = 10
+		completion_reward = {
+			add_country_leader_trait = the_proactive_approach
+		}
+		mutually_exclusive = {
+			focus = mollissea_torch_p_1_1
+		}
+		prerequisite = {
+			focus = mollissea_torch_1
+		}
+	}
+	focus = {
+		id = mollissea_torch_p_1_1
+		icon = GFX_goal_demand_sudetenland
+		x = -3
+		y = 0
+		cost = 10
+		completion_reward = {
+			add_country_leader_trait = watchful
+		}
+		mutually_exclusive = {
+			focus = mollissea_torch_p_2_1
+		}
+		prerequisite = {
+			focus = mollissea_torch_1
+		}
+	}
+	focus = {
+		id = mollissea_torch_2
+		icon = GFX_focus_generic_treaty
+		x = 2
+		y = 0
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = mollissea_torch_1
+		}
+	}
+	focus = {
+		id = mollissea_torch_3
+		icon = GFX_goal_unknown
+		x = 1
+		y = 2
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = mollissea_torch_2
+		}
+		mutually_exclusive = {
+			focus = mollissea_torch_4
+		}
+	}
+	focus = {
+		id = mollissea_torch_4
+		icon = GFX_goal_unknown
+		x = 3
+		y = 2
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = mollissea_torch_2
+		}
+		mutually_exclusive = {
+			focus = mollissea_torch_3
+		}
+	}
+	focus = {
+		id = mollissea_torch_5
+		icon = GFX_goal_unknown
+		x = 2
+		y = 3
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = mollissea_torch_4
+		}
+		prerequisite = {
+			focus = mollissea_torch_3
+		}
+	}
+	focus = {
+		id = mollissea_torch_f_1
+		icon = GFX_goal_unknown
+		x = -7
+		y = 0
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = mollissea_torch_1
+		}
+	}
+}

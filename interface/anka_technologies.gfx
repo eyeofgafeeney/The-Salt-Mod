@@ -1,0 +1,7 @@
+spriteTypes = {
+	SpriteType = {
+		name = "GFX_experemental_weapons_tab"
+		texturefile = "gfx//interface//techtree//techtree_infantry_tab.dds"
+		noOfFrames = 2
+	}
+}

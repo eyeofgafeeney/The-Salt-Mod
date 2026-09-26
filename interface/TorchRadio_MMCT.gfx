@@ -1,0 +1,7 @@
+spriteTypes = {
+    spriteType = {
+      name = "GFX_radio_station_cover_TorchRadio_MMCT"
+      textureFile = "gfx/radio_station_cover_TorchRadio_MMCT.dds"
+      noOfFrames = 2
+    }
+}

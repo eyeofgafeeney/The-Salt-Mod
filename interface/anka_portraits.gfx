@@ -1,0 +1,50 @@
+spriteTypes = {
+	SpriteType = {
+		name = "GFX_portrait_mos_council"
+		texturefile = "gfx/leaders/MOS/portrait_mos_council.dds"
+	}
+	SpriteType = {
+		name = "GFX_portrait_mos_council_army"
+		texturefile = "gfx/leaders/MOS/portrait_mos_council_army.dds"
+	}
+	SpriteType = {
+		name = "GFX_portrait_mos_council_navy"
+		texturefile = "gfx/leaders/MOS/portrait_mos_council_navy.dds"
+	}
+	SpriteType = {
+		name = "GFX_portrait_mos_council_small"
+		texturefile = "gfx/leaders/MOS/portrait_mos_council_small.dds"
+	}
+	SpriteType = {
+		name = "GFX_portrait_mos_council_army_small"
+		texturefile = "gfx/leaders/MOS/portrait_mos_council_army_small.dds"
+	}
+	SpriteType = {
+		name = "GFX_portrait_mos_pineapple_small"
+		texturefile = "gfx/leaders/MOS/portrait_mos_pineapple_small.dds"
+	}
+	SpriteType = {
+		name = "GFX_portrait_fur_squidd"
+		texturefile = "gfx/leaders/FUR/portrait_fur_squidd.dds"
+	}
+	SpriteType = {
+		name = "GFX_portrait_mos_torch"
+		texturefile = "gfx/leaders/MOS/portrait_mos_torch.dds"
+	}
+	SpriteType = {
+		name = "GFX_portrait_mos_noava"
+		texturefile = "gfx/leaders/MOS/portrait_mos_noava.dds"
+	}
+	SpriteType = {
+		name = "GFX_portrait_mos_squidd"
+		texturefile = "gfx/leaders/MOS/portrait_mos_squidd.dds"
+	}
+	SpriteType = {
+		name = "GFX_portrait_mos_torch_small"
+		texturefile = "gfx/leaders/MOS/portrait_mos_torch_small.dds"
+	}
+	SpriteType = {
+		name = "GFX_portrait_gmc_earthchan"
+		texturefile = "gfx/leaders/MCR/portrait_gmc_earthchan.dds"
+	}
+}

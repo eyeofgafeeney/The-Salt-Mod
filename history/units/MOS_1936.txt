@@ -1,0 +1,78 @@
+division_template = {
+	name = "Infantry Division"
+	regiments = {
+		infantry = {
+			x = 0
+			y = 0
+		}
+		infantry = {
+			x = 0
+			y = 1
+		}
+		infantry = {
+			x = 1
+			y = 0
+		}
+		infantry = {
+			x = 1
+			y = 1
+		}
+		infantry = {
+			x = 2
+			y = 0
+		}
+		infantry = {
+			x = 2
+			y = 1
+		}
+	}
+	support = {
+		engineer = {
+			x = 0
+			y = 0
+		}
+	}
+}
+division_template = {
+	name = "Motorized Infantry Division"
+	regiments = {
+		motorized = {
+			x = 0
+			y = 0
+		}
+		motorized = {
+			x = 0
+			y = 1
+		}
+		motorized = {
+			x = 1
+			y = 0
+		}
+		motorized = {
+			x = 1
+			y = 1
+		}
+	}
+	support = {
+		mot_recon = {
+			x = 0
+			y = 0
+		}
+	}
+}
+units = {
+	division = {
+		division_template = "Infantry Division"
+		location = 1601
+	}
+	division = {
+		division_template = "Infantry Division"
+		location = 10242
+		start_experience_factor = 0.5
+	}
+	division = {
+		division_template = "Motorized Infantry Division"
+		location = 3513
+		start_experience_factor = 0.23
+	}
+}

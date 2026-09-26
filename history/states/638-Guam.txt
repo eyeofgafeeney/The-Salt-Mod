@@ -1,0 +1,25 @@
+state = {
+	id = 638
+	name = "STATE_638"
+	state_category = small_island
+	manpower = 75153
+	history = {
+		owner = USB
+		buildings = {
+			infrastructure = 3
+			12140 = {
+				naval_base = 1
+			}
+		}
+		victory_points = { 12140 1 }
+		strategic_province_location = {
+			natural_harbor = 12140
+		}
+		strategic_state_location = {
+			favorable_approach = 12140
+		}
+		add_core_of = USB
+	}
+	provinces = { 12140 }
+	local_supplies = 0.0
+}
